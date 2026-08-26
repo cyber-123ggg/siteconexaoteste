@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Cabecalho */
+.header {
+  background-color: #b71c1c;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+/* Container do Catálogo */
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Grid com os Quadrados */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Card do Produto */
+.product-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #ffcdd2;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(183, 28, 28, 0.06);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(183, 28, 28, 0.18);
+}
+
+.image-container {
+  width: 100%;
+  height: 180px;
+  background-color: #ffebee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Conteúdo do Card */
+.product-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 6px;
+}
+
+.product-barcode {
+  font-size: 0.75rem;
+  color: #757575;
+  margin-bottom: 12px;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #d32f2f;
+  margin-top: auto;
+}
